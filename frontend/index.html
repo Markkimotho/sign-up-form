@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Onboarding</title>
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the User Onboarding Project</h1>
-    <p>This is the frontend of the application.</p>
+    <h1>Sign Up</h1>
+    <form action="http://localhost:3000/signup" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="mail@mail.com" required><br><br>
+
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" required><br><br>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+        <label for="password-repeat">Repeat Password:</label>
+        <input type="password" id="password-repeat" name="password-repeat" placeholder="Repeat Password" required><br><br>
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px;"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <div>
+            <button type="button" onclick="window.location.href='login-page.html'">Cancel</button>
+            <button type="submit">Sign Up</button>
+        </div>
+       <br>
+    </form>
+    <a href="login-page.html"><button type="button">Login</button></a>
+    <script src="script.js"></script>
 </body>
 </html>
-
