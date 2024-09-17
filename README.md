@@ -26,7 +26,7 @@ To run this project locally using the Vanilla JavaScript implementation, follow 
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/Markkimotho/sign-up-form.git
-    cd sign-up-form
+    cd user-onboarding
     ```
 
 2. **Set Up the Backend**:
