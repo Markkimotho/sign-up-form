@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" style="background-color: none;">
+        <div class="illustration">
+            <!-- Add your Notion-style illustration here -->
+            <img src="signup.svg" alt="Illustration" class="svg-image"/>
+        </div>
+        <div class="form-container">
+            <h1>Sign Up</h1>
+            <form action="http://localhost:3000/signup" method="POST" autocomplete="on">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required autocomplete="given-name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required autocomplete="family-name">
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required autocomplete="username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required autocomplete="new-password">
+
+                <label for="password-repeat">Repeat Password</label>
+                <input type="password" id="password-repeat" name="password-repeat" placeholder="Repeat Password" required autocomplete="new-password">
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div>
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+            <div class="login">
+                <p>Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
