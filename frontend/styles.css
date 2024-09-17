@@ -14,17 +14,18 @@ body {
 .illustration {
     justify-content: center;
     align-items: center;
-    margin: 20px;
     /* background-color: aqua; */
 }
 
 .svg-image {
-    width: 75%; /* Adjust width as needed */
-    height: 75%; /* Adjust height as needed */
+    width: 400px; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    margin: 30px;
 }
 
 
 .container {
+    background-color: none;
     display: flex;
 }
 
@@ -81,7 +82,7 @@ input[type="password"]:focus {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #0867cc;
     color: white;
     border: none;
     border-radius: 5px;
